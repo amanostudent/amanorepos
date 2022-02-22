@@ -5,6 +5,7 @@
 }
 header{
     width:100%;
+    position: fixed;
 }
 nav{
     background-color: white;
@@ -101,6 +102,16 @@ nav ul li a:hover{
 .intro1 p{
     font-size: 22px;
 }
+.a {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:cornflowerblue;
+   margin-left: 1720px;
+   -ms-transform: rotate(90deg); 
+    transform: rotate(90deg);
+    margin-right: -120px;
+  }
+ 
 .intro2{
     width:100%;
     height: 140vh;
@@ -133,7 +144,7 @@ nav ul li a:hover{
     border:2px solid gray;
     width:34%;
     height:30vh;
-   padding-top:40px;
+   padding-top:46px;
 }
 .box h4{
     font-weight: bold;
