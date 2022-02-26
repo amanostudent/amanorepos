@@ -234,3 +234,50 @@ footer{
 .project button:hover{
     color:cornflowerblue;
 }
+.info{
+
+text-align: center;
+padding-top: 155px;
+}
+.pro{
+    margin:25px;
+   
+    height:45vh;
+}
+.pro h1{
+    font-size: 45px;
+}
+.pro p{
+    font-size: 18px;
+}
+.pro img{
+    height:auto;
+}
+.div{
+    width:60%;
+    background-color: cornflowerblue;
+    border:1px solid cornflowerblue;
+    height:35vh;
+    margin:auto;
+}
+.div h3{
+    font-size: 30px;
+}
+.div p{
+    font-size: 18px;
+}
+.details{
+   
+    height:30vh;
+  padding-top: 118px;;
+}
+.details h1{
+    font-size: 45px;
+}
+.details h6{
+    font-size: 25px;
+    line-height: 1.9;
+}
+.details p{
+    font-size: 18px;
+}
