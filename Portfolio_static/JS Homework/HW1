@@ -1,0 +1,7 @@
+var student={
+    name: "Emma",
+    sclass: "VI",
+    age:18
+}
+delete student.age
+alert(student.name+" "+ sclass)
