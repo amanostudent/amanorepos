@@ -14,7 +14,6 @@ html{
   background-color: #f0f1f0;
 }
 body {
-  
   background-color: #f0f1f0;
   
 }
@@ -37,26 +36,31 @@ height: 350px;
 }
 .panel.panel-default{
   background-color: black;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 0% !important;
+ 
+  width:100%;
 }
-
-.cover-container{
-  border-radius: 20px ;
-  
+.cover-container {
+   height:1200px;
+}
+.container-sm {
+   margin-top: 150px;;
 }
 tr.border-top td{
   border-top: 1pt solid black;
+  border-right: 1px solid black;
+  
 }
 .black{
-  width: 100%;
-  height: 20px;
+ width:1306px;
+height:30px;
   background-color: black;
-  padding-left: 0px;
-  padding-right: 0px;
-  border-radius: 10px;
+ margin-top: -25px;
 
+}
+.black1{
+width:1306px;
+height:30px;
+  background-color: black;
 }
 .d-flex{
   display: flex !important;
@@ -66,10 +70,18 @@ tr.border-top td{
   color:rosybrown;
   
 }
+.border-top{
+    text-transform: uppercase;
+    font-weight:bold ;
+    font-size: 29px;
+   
+}
+
+
     </style>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column ">
       <div class="container-sm border border-dark rounded">    
-        <div class="black">
+        <div class="black1">
         </div>
         <div class="d-flex flex-row-reverse bd-highlight">
           <nav class="navbar navbar-expand-lg navbar-light ">
@@ -101,14 +113,14 @@ tr.border-top td{
               <span class="normal">have some hobbies.</span>
             </p>
   
-          </div>
+          </div >
           <p>
               I love to...
           </p>
           <div class="container-fluid pr">
               <table class="table table-responsive table-borderless table-active">
                       <tbody>
-                        
+                          
                           <tr class="border-top">
                             <td scope="row" href="writings.html" >Write <i class="bi-arrow-right"></i></td>
                             <td>Code <i class="bi-arrow-right"></i></td>
