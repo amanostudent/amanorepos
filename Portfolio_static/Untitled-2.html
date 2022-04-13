@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +25,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .fulltext{
-  font-size: 50px;
+  font-size: 4em;
   height:100%;
   width: 100%;
 }
 .container-fluid{
-height: 350px;
+height: fit-content;
 }
 .container-fluid.pr{
   height: max-content;
@@ -43,7 +44,7 @@ height: 350px;
    height:1200px;
 }
 .container-sm {
-   margin-top: 150px;;
+   margin-top: 30px;
 }
 tr.border-top td{
   border-top: 1pt solid black;
@@ -51,13 +52,13 @@ tr.border-top td{
   
 }
 .black{
- width:1306px;
+ width:100%;
 height:30px;
-  background-color: black;
- margin-top: -25px;
+background-color: black;
+ margin-top:-25px;
 }
 .black1{
-width:1306px;
+width:100%;
 height:30px;
   background-color: black;
 }
@@ -75,7 +76,9 @@ height:30px;
     font-size: 29px;
    
 }
-
+.table-hover:hover{
+  color:black !important;
+}
 
     </style>
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column ">
@@ -89,7 +92,7 @@ height:30px;
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home </a>
+                <a class="nav-item nav-link active" href="Untitled-2.html">Home </a>
                 <a class="nav-item nav-link" href="#">Contact</a>
               </div>
             </div>
@@ -111,24 +114,23 @@ height:30px;
               <span class="italic">I</span>
               <span class="normal">have some hobbies.</span>
             </p>
-  
           </div >
           <p>
               I love to...
           </p>
           <div class="container-fluid pr">
-              <table class="table table-responsive table-borderless table-active">
+              <table class="table table-responsive table-borderless table-hover">
                       <tbody>
                           
                           <tr class="border-top">
-                            <td scope="row" href="writings.html" >Write <i class="bi-arrow-right"></i></td>
-                            <td>Code <i class="bi-arrow-right"></i></td>
+                            <td scope="row" onclick="location.href='writings.html'">Write <i class="bi-arrow-right"></i></td>
+                            <td onclick="location.href='codes.html'">Code <i class="bi-arrow-right"></i></td>
                         </tr>
                      
                       
                         <tr class="border-top">
-                          <td scope="row" href="#">Organize <i class="bi-arrow-right"></i></td>
-                          <td href="#"> Hobbies  <i class="bi-arrow-right"></i></td>
+                          <td scope="row" onclick="location.href='writings.html'">Organize <i class="bi-arrow-right"></i></td>
+                          <td onclick="location.href='writings.html'"> Hobbies  <i class="bi-arrow-right"></i></td>
                       </tr>
                                               
                       </tbody>
