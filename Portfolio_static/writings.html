@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="addstories.js"></script>
     </head>
     <style>
         html{
@@ -27,7 +28,11 @@
           width: 100%;
         }
         .container-fluid{
-        height: fit-content;
+        height: 70vmax;
+        width: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
         }
         
         .cover-container {
@@ -62,10 +67,46 @@
         .footer {
   font-weight: bold;
 }
-        
-            </style>
+#Writingshead{
+  font-weight: bold;
+ padding-left: 1rem;
+ font-size: larger;
+}
+</style>
+<script>
+  fetch('https://jsonplaceholder.typicode.com/albums')
+.then(function(response) {
+return response.json();
+})
+.then(function (data) {
+    add(data);
+})
+.catch(function (err) {
+console.log('error: ' + err);
+});
+function add(data){
+console.log(data);
+var storyparentcontainer=document.getElementById('cont');
+for(var i = 0; i <= data.length; i++){
+    var storycontainer=document.createElement('div');
+    storycontainer.classList.add("shadow-lg");
+    storycontainer.classList.add("p-3");
+    storycontainer.classList.add("mb-5");
+    storycontainer.classList.add("bg-white");
+    storycontainer.classList.add("rounded");
+    storycontainer.classList.add("border-dark")
+    var storytitle=document.createElement('p');
+    var storygenre=document.createElement('p');
+    storygenre.innerHTML=data[i].id;
+    storytitle.innerHTML=data[i].title;
+    storycontainer.appendChild(storygenre);
+    storycontainer.appendChild(storytitle);
+    storyparentcontainer.appendChild(storycontainer);
+}
+}
+</script>
     <body>
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column ">
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
             <div class="container-sm border border-dark rounded">    
               <div class="black1">
               </div>
@@ -82,161 +123,10 @@
                   </div>
                 </nav>
               </div>
-              <div class="container-fluid">
-                <h1>
-                  Love of Thanatos
-                </h1>
-                <p class="fulltext">
-                    August 15. Even though the sun had set a long time ago, humid air continued to linger on in the surroundings. Sweat gushed out endlessly from my body as I dashed up the stairs of the apartment building. <br>
-
-                    “Goodbye.”
-                    
-                    Her message contained just this word.
-                    
-                    I immediately understood what that meant.
-                    
-                    I had been working throughout the last week. Right after completing the preparations for returning home, I had hurriedly headed for the apartment building where I lived.
-                    
-                    And it was on the roof, outside the fence, where I found her standing with a vacant look in her eyes.
-                    
-                    The truth is, this was the fourth time I had seen her attempting to take her life by jumping.
-                    
-                    It is said that there are two kinds of people in this world.
-                    
-                    Humans who are inclined towards life — governed by “Eros”;
-                    
-                    And humans who are inclined towards death — governed by “Thanatos”.
-                    
-                    Most people belong to the former, yet she was unmistakably of the latter kind.
-                    
-                    That she was a human being governed by “Thanatos” was something I had known even before I began dating her.
-                    
-                    After all, the reason for our first encounter was because I had tried to save her from attempting suicide on the roof of the apartment building, just like what was happening now.
-                    
-                    She was a girl who had just moved into the same apartment building. With her round eyes and full lips, she possessed a lovely set of facial features yet had a delicate expression on her face. She stole my heart in an instant. Surely, it must have been love at first sight.
-                    
-                    From that moment on, we chatted about various topics and became good friends very quickly. For me, who had been working at a black company and living my life in solitude, she was like an angel who had descended from the heavens.
-                    
-                    Except, I had one doubt.
-                    
-                    Each time she had planned to take her life, she would contact me without fail. And she would wait there until I arrived.
-                    
-                    I thought it would be better to die alone without telling anyone, but perhaps, somewhere in her heart, she wished for me to stop her from committing suicide and help her, like I did the first time we had met. I simply took this as an explanation for her actions.
-                    
-                    And that’s why I rushed up the stairs of the apartment building this time as well.
-                    
-                    “Haa, haa…”
-                    
-                    I reached the roof of the apartment building.
-                    
-                    I found her standing on the opposite side of the fence, with her back towards me.
-                    
-                    “Wait…!!”
-                    
-                    I jumped over the fence and took hold of her hand.
-                    
-                    It was cold, contrary to the humid weather.
-                    
-                    “Let go.”
-                    
-                    Akin to the ringing of bells, her voice was fleeting and sweet. I loved her voice too.
-                    
-                    “Why are you doing this…!”
-                    
-                    “I want to die, quickly.”
-                    
-                    “Why…!”
-                    
-                    “Because the god of death is calling for me.”
-                    
-                    She could see the ‘god of death’. This was said to be a rare symptom amongst those who were governed by “Thanatos”.
-                    
-                    And apart from them, no one else could see this ‘god of death’.
-                    
-                    “There’s no such thing as the god of death.”
-                    
-                    “Why won’t you understand…!”
-                    
-                    When I deny the existence of a god of death, she would definitely scream and shout.
-                    
-                    It seems that to those who can see it, the god of death is most attractive. It resembles their ideal person, so to speak.
-                    
-                    Whenever she was gazing at the god of death (although for me, I don’t see anything else besides an empty space), her expression was always that of a maiden in love. It was as if she had completely lost her heart to it.
-                    
-                    I hated that kind of expression on her face.
-                    
-                    “Don’t look at the god of death or whatever, look at me.”
-                    
-                    “No…!”
-                    
-                    Since she tried to shake my hand off, I ended up holding hers even harder without thinking.
-                    
-                    “It hurts…!”
-                    
-                    “! Sorry…”
-                    
-                    But, isn’t this your fault? Because you were trying to shake my hand off. Because you wouldn’t look at me instead.
-                    
-                    “The god of death wouldn’t do such a thing…!”
-                    
-                    The darkness in my heart surged forth.
-                    
-                    “Why…”
-                    
-                    Why is it that even though I love you so much, you would not even spare me a glance?
-                    
-                    Somewhere in my heart, I thought it was ridiculous to feel jealousy towards a god of death, but even that could not bother me anymore.
-                    
-                    “I’m sick of this.”
-                    
-                    I’m sick of this too.
-                    
-                    “I’m tired.”
-                    
-                    I’m tired too.
-                    
-                    “I want to die quickly.”
-                    
-                    “I want to die too!!”
-                    
-                    At that point, she lifted her head.
-                    
-                    She was grinning broadly at me.
-                    
-                    As soon as I saw her smiling face, I felt the darkness in my heart dissipate in an instant.
-                    
-                    Wait, could it be that?
-                    
-                    “Did you finally… realise?”
-                    
-                    “Yeah… I finally understood.”
-                    
-                    “Really…? That’s great.”
-                    
-                    Ah, I see.
-                    
-                    The reason you called me each time you planned to commit suicide was not because you wanted my help.
-                    
-                    It was because you wanted to bring me along with you.
-                    
-                    To me, she was the ‘god of death’.
-                    
-                    A cool breeze blew past. Before I knew it, I could no longer feel the heat and humidity from before.
-                    
-                    “Well then, shall we go?”
-                    
-                    “Yeah, let’s go.”
-                    
-                    You and me, with our hands connected.
-                    
-                    So that we could escape from the frustration the world brings us,
-                    
-                    We leapt out into the night sky.
-                </p>
-                <footer>
-                  Altanshagai(天野), 2020.
-                </footer>
-              </div >
+              <div id='Writingshead'class="">
+                <h1>Fiction</h1></div>
+              <div id='cont' class="container-fluid">
+              </div>
               <div class="black1">
             </div>
         </div>
